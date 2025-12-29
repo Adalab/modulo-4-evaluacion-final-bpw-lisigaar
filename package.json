@@ -1,7 +1,7 @@
 {
-  "name": "modulo-4-evaluacion-final-bpw-josune-mo",
+  "name": "modulo-4-evaluacion-final-bpw-lisigaar",
   "version": "1.0.0",
-  "description": "Evaluación - Módulo 4 - Josune Morales Arrieta",
+  "description": "Evaluación - Módulo 4 - Lis García",
   "keywords": [
     "server",
     "expressjs",
@@ -16,20 +16,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Adalab/modulo-4-evaluacion-final-bpw-josune-mo.git"
+    "url": "git+https://github.com/Adalab/modulo-4-evaluacion-final-bpw-lisigaar.git"
   },
-  "author": "Josune Morales Arrieta",
+  "author": "Lis García",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Adalab/modulo-4-evaluacion-final-bpw-josune-mo/issues"
+    "url": "https://github.com/Adalab/modulo-4-evaluacion-final-bpw-lisigaar/issues"
   },
-  "homepage": "https://github.com/Adalab/modulo-4-evaluacion-final-bpw-josune-mo#readme",
+  "homepage": "https://github.com/Adalab/modulo-4-evaluacion-final-bpw-lisigaar#readme",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
-    "express": "^5.1.0",
+    "express": "^5.2.1",
     "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.14.3"
+    "mysql2": "^3.16.0"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }

@@ -1,8 +1,10 @@
--- MySQL dump 10.13  Distrib 8.0.42, for macos15 (arm64)
+CREATE DATABASE  IF NOT EXISTS `simpsons` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `simpsons`;
+-- MySQL dump 10.13  Distrib 8.0.44, for macos15 (arm64)
 --
--- Host: 127.0.0.1    Database: simpsons
+-- Host: localhost    Database: simpsons
 -- ------------------------------------------------------
--- Server version	9.3.0
+-- Server version	9.5.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -14,6 +16,14 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN;
+SET @@SESSION.SQL_LOG_BIN= 0;
+
+--
+-- GTID state at the beginning of the backup 
+--
+
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ 'a3369444-d67a-11f0-9699-2d13d9099f04:1-88';
 
 --
 -- Table structure for table `capitulos`
@@ -124,6 +134,7 @@ LOCK TABLES `personajes` WRITE;
 INSERT INTO `personajes` VALUES (1,'Homer','Simpson','Nuclear Safety Inspector','El padre de la familia Simpson.'),(2,'Marge','Simpson','Ama de casa','La madre de la familia Simpson, conocida por su cabello azul.'),(3,'Bart','Simpson','Estudiante','El hijo travieso de Homer y Marge.'),(4,'Lisa','Simpson','Estudiante','La hija inteligente y activista de la familia.'),(5,'Maggie','Simpson','Bebé','La bebé de la familia, conocida por su chupete.');
 /*!40000 ALTER TABLE `personajes` ENABLE KEYS */;
 UNLOCK TABLES;
+SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -134,4 +145,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-08-02 10:04:56
+-- Dump completed on 2025-12-29  9:59:06
