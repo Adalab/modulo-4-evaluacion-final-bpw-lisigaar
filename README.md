@@ -1,40 +1,14 @@
-📺 API de Frases de Los Simpsons
+# 📺 API de Frases de Los Simpsons
 
-Una REST API desarrollada con Node.js, Express y MySQL para consultar y gestionar frases icónicas de los personajes de la serie The Simpsons.
+Una REST API desarrollada con **Node.js**, **Express** y **MySQL** para gestionar frases icónicas de la serie. Este proyecto forma parte de la Evaluación Final del Módulo 4 de Adalab.
 
-🚀 Endpoints disponibles
+---
 
-📌 Frases
+## 🚀 Instalación y Configuración
 
-🔹 GET /frases
-Obtiene todas las frases, incluyendo información del personaje.
+Sigue estos pasos para ejecutar el proyecto localmente:
 
-🔹 GET /frases/:id
-Obtiene una frase por su ID.
-
-🔹 POST /frases
-Crea una nueva frase. 
-
-🔹 PUT /frases/:id
-Actualiza una frase existente.
-
-🔹 DELETE /frases/:id
-Elimina una frase.
-
-🔹  GET /frases/personaje/:personaje_id
-Obtiene todas las frases de un personaje específico.
-
-📌 Personajes
-🔹  GET /personajes
-Obtiene todos los personajes.
-
-📌 Capítulos
-🔹  GET /capitulos
-Obtiene todos los capítulos.
-
-
-ℹ️ Notas
-
-- Todas las respuestas son en formato JSON.
-- Si ocurre un error, se devuelve un mensaje de error y el código HTTP correspondiente.
-- Puedes probar los endpoints usando Postman o cualquier cliente HTTP.
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [PEGA_AQUI_TU_URL_DE_GITHUB]
+   cd modulo-4-evaluacion-final-bpw-lisigaar
